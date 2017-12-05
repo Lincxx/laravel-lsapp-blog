@@ -30,5 +30,8 @@ Route::get('/about', 'PagesController@about');
 
 Route::get('/services', 'PagesController@services');
 
+//This will automatically map the routes
+Route::resource('posts', 'PostsController');
+
 
 
